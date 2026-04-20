@@ -6,15 +6,14 @@ import { Wrench, Shield, Truck, Headphones as HeadphonesIcon } from 'lucide-reac
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <section className="relative h-[665px] md:h-[665px] flex items-start justify-center pt-20 md:pt-28 overflow-hidden bg-gradient-to-br from-[#231f20] via-[#3a3538] to-[#5a3535]">
-        <div className="absolute inset-0">
+    <section className="relative min-h-[90vh] flex items-start justify-center pt-12 md:pt-28 overflow-hidden bg-gradient-to-br from-[#231f20] via-[#3a3538] to-[#5a3535]">        
+    <div className="absolute inset-0">
           <img
             src="https://i.ibb.co/rqhQNvg/pexels-tima-miroshnichenko-6790045.jpg"
             alt="Hero"
             className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
-        </div>
+<div className="absolute inset-0 bg-gradient-to-r from-[#0f0f0f] via-[#0f0f0f]/80 to-transparent" />        </div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
