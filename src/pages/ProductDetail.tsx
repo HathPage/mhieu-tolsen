@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { products } from '../data/products';
+import { Link } from "react-router-dom";
 import Rating from '../components/Rating';
 import { ShoppingCart, Phone, Mail } from 'lucide-react';
 import { useState } from 'react';
@@ -14,9 +15,9 @@ export default function ProductDetail() {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Không tìm thấy sản phẩm</h1>
-          <a href="/" className="text-[#f04c39] hover:underline">
-            Về trang chủ
-          </a>
+          <Link to="/" className="text-[#f04c39] hover:underline">
+          Về trang chủ
+          </Link>
         </div>
       </div>
     );
@@ -122,10 +123,11 @@ export default function ProductDetail() {
               .filter((p) => p.category === product.category && p.id !== product.id)
               .slice(0, 5)
               .map((relatedProduct) => (
-                <a
-                  key={relatedProduct.id}
-                  href={`/product/${relatedProduct.id}`}
-                  className="group"
+                <Link
+                key={relatedProduct.id}
+                to={`/product/${relatedProduct.id}`}
+                className="group"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 >
                   <div className="bg-gray-100 rounded-lg overflow-hidden mb-3 aspect-square">
                     <img
@@ -140,7 +142,7 @@ export default function ProductDetail() {
                   {relatedProduct.price && (
                     <p className="text-[#f04c39] font-bold mt-2">{relatedProduct.price}</p>
                   )}
-                </a>
+                </Link>
               ))}
           </div>
         </div>

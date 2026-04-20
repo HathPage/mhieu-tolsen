@@ -1,4 +1,5 @@
 import { cate, products } from '../data/products';
+import { Link } from "react-router-dom";
 import CategorySection from '../components/CategorySection';
 import { Wrench, Shield, Truck, Headphones as HeadphonesIcon } from 'lucide-react';
 
@@ -41,12 +42,13 @@ export default function Home() {
                 <Wrench className="mr-2" />
                 XEM SẢN PHẨM
               </a>
-              <a
-                href="Contact"
+              <Link
+                to="/contact"
                 className="bg-transparent border-2 border-[#f04c39] text-[#f04c39] hover:bg-[#f04c39] hover:text-black font-bold px-8 py-4 rounded-lg transition-all transform hover:scale-105 shadow-lg"
-              >
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                >
                 LIÊN HỆ NGAY
-              </a>
+              </Link>         
             </div>
           </div>
         </div>
@@ -106,12 +108,12 @@ export default function Home() {
           );
         })}
         <div className="mt-10 flex justify-center">
-  <a
-    href="/products"
-    className="bg-[#f04c39] hover:bg-[#d93c2b] text-black font-bold px-10 py-4 rounded-lg transition-all transform hover:scale-105 shadow-lg"
-  >
-    XEM TẤT CẢ SẢN PHẨM
-  </a>
+  <Link
+  to="/products"
+  className="bg-[#f04c39] hover:bg-[#d93c2b] text-black font-bold px-10 py-4 rounded-lg transition-all transform hover:scale-105 shadow-lg"
+>
+  XEM TẤT CẢ SẢN PHẨM
+</Link>
 </div>
       </div>
 
@@ -128,12 +130,12 @@ export default function Home() {
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Liên hệ ngay với chúng tôi để được tư vấn và báo giá tốt nhất
           </p>
-          <a
-            href="/contact"
-            className="bg-[#f04c39] hover:bg-[#d93c2b] text-black font-bold px-12 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-2xl inline-block"
-          >
-            LIÊN HỆ NGAY
-          </a>
+          <Link
+                to="/contact"
+                className="bg-[#f04c39] hover:bg-[#d93c2b] text-black font-bold px-12 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-2xl inline-block"
+                >
+                LIÊN HỆ NGAY
+              </Link>  
         </div>
       </section>
     </div>
