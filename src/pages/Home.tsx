@@ -9,7 +9,7 @@ export default function Home() {
     <section className="relative min-h-[90vh] flex items-start justify-center pt-12 md:pt-28 overflow-hidden bg-gradient-to-br from-[#231f20] via-[#3a3538] to-[#5a3535]">        
     <div className="absolute inset-0">
           <img
-            src="https://i.ibb.co/rqhQNvg/pexels-tima-miroshnichenko-6790045.jpg"
+            src="https://i.ibb.co/5gFMctxn/pexels-alena-29286299.jpg"
             alt="Hero"
             className="w-full h-full object-cover opacity-30"
           />
@@ -20,16 +20,15 @@ export default function Home() {
             <div className="inline-block bg-[#f04c39] text-black px-6 py-2 rounded-full font-bold mb-6 text-sm tracking-wider">
               CHUYÊN NGHIỆP • UY TÍN • CHẤT LƯỢNG
             </div>
-         <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
-  <span className="italic">
+<h1 className="text-5xl md:text-7xl text-white mb-6 leading-tight">
+  <span className="block font-normal not-italic text-5xl md:text-[4.3rem]">
     DỤNG CỤ SỬA CHỮA
   </span>
-  <br />
-  <span className="text-[#f04c39]">
+  <span className="inline-block text-[#f04c39] font-black md:text-[5rem]">
     CHUYÊN NGHIỆP
   </span>
 </h1>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed md:text-[1.13rem]">
               Cung cấp đầy đủ các loại dụng cụ cơ khí: kìm, khoan, tô vít, máy cắt, bộ công cụ <br />
               chất lượng cao từ các thương hiệu hàng đầu thế giới.
             </p>
