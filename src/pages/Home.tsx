@@ -22,7 +22,9 @@ export default function Home() {
             </div>
 <h1 className="text-5xl md:text-7xl text-white mb-6 leading-tight">
   <span className="block font-normal not-italic text-5xl md:text-[4.3rem]">
-    DỤNG CỤ SỬA CHỮA
+    DỤNG CỤ
+    <br className="md:hidden" />
+    SỬA CHỮA
   </span>
   <span className="inline-block text-[#f04c39] font-black md:text-[5rem]">
     CHUYÊN NGHIỆP
