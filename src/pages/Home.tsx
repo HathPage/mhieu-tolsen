@@ -23,6 +23,7 @@ export default function Home() {
 <h1 className="text-5xl md:text-7xl text-white mb-6 leading-tight">
             <span className="block font-normal not-italic text-5xl md:text-[4.3rem]">
               <span className="block md:inline">DỤNG CỤ</span>
+              <span className="hidden md:inline">&nbsp;</span>
               <span className="block md:inline mt-2 md:mt-0">SỬA CHỮA</span>
             </span>
   <span className="inline-block text-[#f04c39] font-black md:text-[5rem]">
