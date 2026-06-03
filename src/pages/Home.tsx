@@ -20,9 +20,9 @@ export default function Home() {
             <div className="inline-block bg-[#f04c39] text-black px-6 py-2 rounded-full font-bold mb-6 text-sm tracking-wider">
               CHUYÊN NGHIỆP • UY TÍN • CHẤT LƯỢNG
             </div>
-<h1 className="text-5xl md:text-7xl text-white mb-6 leading-[1.15] md:leading-tight">
+<h1 className="text-5xl md:text-7xl text-white mb-6 leading-[1.6] md:leading-tight">
   <span className="block font-normal not-italic text-5xl md:text-[4.3rem]">
-    DỤNG CỤ<span className="md:hidden"><br /></span> SỬA CHỮA
+    DỤNG CỤ<span className="md:hidden"><br /></span><span className="hidden md:inline"> </span>SỬA CHỮA
   </span>
   <span className="inline-block text-[#f04c39] font-black md:text-[5rem]">
     CHUYÊN NGHIỆP
