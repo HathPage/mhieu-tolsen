@@ -35,7 +35,12 @@ export default function Contact() {
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-5xl md:text-6xl font-black text-white mb-4">LIÊN HỆ CHÚNG TÔI</h1>
+          {/* <h1 className="text-5xl md:text-6xl font-black text-white mb-4">LIÊN HỆ CHÚNG TÔI</h1> */}
+          <h1 className="text-5xl md:text-6xl font-black text-white mb-4">
+  <span className="block md:inline">LIÊN HỆ</span>
+  <span className="hidden md:inline">&nbsp;</span>
+  <span className="block md:inline mt-2 md:mt-0">CHÚNG TÔI</span>
+</h1>
           <p className="text-xl text-gray-300">Chúng tôi luôn sẵn sàng hỗ trợ bạn 24/7</p>
         </div>
       </section>
