@@ -31,6 +31,7 @@ export default function ProductsPage() {
         <div className="container mx-auto px-4 relative z-10">
 <h1 className="text-5xl md:text-6xl font-black text-white mb-4">
   <span className="block md:inline">TOÀN BỘ</span>
+                <span className="hidden md:inline">&nbsp;</span>
   <span className="block md:inline md:ml-3">SẢN PHẨM</span>
 </h1>
           <p className="text-xl text-gray-300">Hơn 200 sản phẩm chất lượng cao trên thị trường</p>
